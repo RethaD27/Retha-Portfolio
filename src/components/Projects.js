@@ -77,7 +77,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p></p>
+                      <p>These are some of the older projects I've worked on, showcasing earlier development work that helped build a foundation for the more advanced projects I handle today. Although archived, these projects reflect key learning experiences and growth over time in areas like web development, and mobile app development.</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
