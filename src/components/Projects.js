@@ -11,33 +11,33 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "E-commerce Web Application",
+      description: "A fully functional e-commerce platform with payment integration and responsive design.",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Mobile App for Health Monitoring",
+      description: "A mobile solution to track health metrics and provide personalized insights.",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "AI-Powered Analytics Dashboard",
+      description: "Development of an AI-driven dashboard for data visualization and decision-making.",
       imgUrl: projImg3,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "AI-Powered Analytics Dashboard",
+      description: "Development of an AI-driven dashboard for data visualization and decision-making.",
       imgUrl: projImg1,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "E-commerce Web Application",
+      description: "A fully functional e-commerce platform with payment integration and responsive design.",
       imgUrl: projImg2,
     },
     {
-      title: "Business Startup",
-      description: "Design & Development",
+      title: "Mobile App for Health Monitoring",
+      description: "A mobile solution to track health metrics and provide personalized insights.",
       imgUrl: projImg3,
     },
   ];
@@ -51,14 +51,14 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Explore some of the innovative projects I have worked on, ranging from AI-powered dashboards to mobile health apps. Each project showcases a blend of design, development, and cutting-edge technology.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                      <Nav.Link eventKey="first">Recent Projects</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                      <Nav.Link eventKey="second">Archived Projects</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -77,7 +77,7 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p></p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
