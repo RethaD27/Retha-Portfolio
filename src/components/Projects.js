@@ -25,21 +25,6 @@ export const Projects = () => {
       description: "Development of an AI-driven dashboard for data visualization and decision-making.",
       imgUrl: projImg3,
     },
-    {
-      title: "AI-Powered Analytics Dashboard",
-      description: "Development of an AI-driven dashboard for data visualization and decision-making.",
-      imgUrl: projImg1,
-    },
-    {
-      title: "E-commerce Web Application",
-      description: "A fully functional e-commerce platform with payment integration and responsive design.",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Mobile App for Health Monitoring",
-      description: "A mobile solution to track health metrics and provide personalized insights.",
-      imgUrl: projImg3,
-    },
   ];
 
   return (
