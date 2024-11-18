@@ -36,9 +36,29 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" />
-          </Navbar.Brand>
+        <Navbar.Brand href="/" style={{ display: 'flex', alignItems: 'center' }}>
+  <div
+    style={{
+      backgroundColor: '#fff', // Maintain the light background
+      borderRadius: '50%', // Circular logo container
+      padding: '15px', // Increase padding for emphasis
+      boxShadow: '0 8px 12px rgba(0, 0, 0, 0.3)', // Stronger shadow for depth
+      border: '2px solid #000', // Thin black border to add subtle contrast
+    }}
+  >
+    <img
+      src={logo}
+      alt="Logo"
+      style={{
+        width: '60px', // Slightly larger for better visibility
+        height: '60px',
+        objectFit: 'contain', // Preserve logo proportions
+      }}
+    />
+  </div>
+</Navbar.Brand>
+
+
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
