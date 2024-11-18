@@ -3,6 +3,8 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -16,6 +18,14 @@ export const Projects = () => {
       imgUrl: projImg1,
     },
     {
+      title: "Meal API Finder",
+      description: "Web application designed to help users explore a wide variety of meals and recipes from an external meal database API",
+      imgUrl: projImg5,
+    },
+  ];
+
+  const archivedProjects = [
+    {
       title: "Mobile App for Health Monitoring",
       description: "A mobile solution to track health metrics and provide personalized insights.",
       imgUrl: projImg2,
@@ -24,6 +34,11 @@ export const Projects = () => {
       title: "AI-Powered Analytics Dashboard",
       description: "Development of an AI-driven dashboard for data visualization and decision-making.",
       imgUrl: projImg3,
+    },
+    {
+      title: "Agile Board",
+      description: "Development of an AI-driven dashboard for data visualization and decision-making.",
+      imgUrl: projImg4,
     },
   ];
 
@@ -62,7 +77,18 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p>These are some of the older projects I've worked on, showcasing earlier development work that helped build a foundation for the more advanced projects I handle today. Although archived, these projects reflect key learning experiences and growth over time in areas like web development, and mobile app development.</p>
+                      <Row>
+                        {
+                          archivedProjects.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                              />
+                            )
+                          })
+                        }
+                      </Row>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
@@ -74,4 +100,4 @@ export const Projects = () => {
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   )
-}
+} 
